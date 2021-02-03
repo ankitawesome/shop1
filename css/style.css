@@ -12,8 +12,8 @@
 /* Css reusable colors for our project*/
 
 :root{
-    --first-color:purple;
-    --first-color-alt:rgb(194, 47, 194);
+    --primary-color:purple;
+    --primary-hover:rgb(194, 47, 194);
     --white-color:#fafaff;
     --dark-color:#101010;
     --dark-color-light:#606060;
@@ -180,7 +180,7 @@ img{
 }
 
 .nav__links:hover{
-    color:var(--first-color);
+    color:var(--primary-hover);
 }
 .nav__logo{
     font-weight: var(--font-bold);
@@ -203,7 +203,7 @@ img{
 
 }
 .active{
-    color:var(--first-color);
+    color:var(--primary-color);
 }
 
 /* Home */
@@ -238,13 +238,13 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 300px;
+    width: 260px;
 }
 /* Button */
 
 .button{
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: var(--primary-color);
     color: var(--white-color);
     padding:1rem;
     font-size: var(--small-font-size);
@@ -257,7 +257,7 @@ img{
 
 
 .button:hover{
-    background-color: var(--first-color-alt);
+    background-color: var(--primary-hover);
     
 }
 
@@ -329,7 +329,7 @@ img{
     position: absolute;
     right: 0;
     top: 0;
-    background-color:var(--first-color);
+    background-color:var(--primary-color);
     color: var(--white-color);
     padding:.5rem 1rem;
     font-size: var(--small-font-size);
@@ -525,6 +525,7 @@ img{
     }
     .home__img{
         width: 370px;
+        
     }
     .collection__container{
         grid-template-columns: repeat(2, 1fr);
